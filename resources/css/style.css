@@ -56,6 +56,10 @@ header img {
 
 nav {
   background-color: firebrick;
+}
+
+nav a {
+  text-decoration: none;
   color: white;
 }
 
@@ -64,6 +68,16 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
+}
+
+.menu-red {
+  padding: 0.75rem 0rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
 }
 
 #samples {
@@ -118,4 +132,19 @@ footer {
   color: white;
   padding: 5rem 0rem;
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu-items {
+    display: none;
+  }
+  .menu-red {
+    display: flex;
+  }
+  .item {
+    width: 47%;
+  }
+  .item .glasses {
+    display: none;
+  }
 }
