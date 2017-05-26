@@ -1,4 +1,4 @@
-html {
+  html {
   font-family: Helvetica, sans-serif;
   font-size: 18px;
 }
@@ -49,7 +49,6 @@ header img {
   padding-top: 0.25rem;
   font-size: 2rem;
   font-weight: bold;
-  font-size: 2em;
   line-height: 1.2em;
   margin: 0.25em 0;
 }
@@ -70,6 +69,9 @@ nav a {
   justify-content: space-between;
   color: white;
 }
+
+
+/*1024 Screen View*/
 
 .menu-red {
   padding: 0.75rem 0rem;
@@ -116,7 +118,7 @@ nav a {
 #location {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 }
 
 .info {
@@ -150,3 +152,53 @@ footer {
     display: none;
   }
 }
+
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 470px;
+    margin: 0 auto;
+  }
+  /* Banner */
+  .banner {
+    height: 15rem;
+    padding-top: 2.32rem;
+  }
+  .new-arrival {
+    top: 10.4rem;
+    max-width: 100%;
+    width: auto;
+    padding: 1rem 2rem;
+  }
+  .new-arrival h4 {
+    font-size: 0.77rem;
+  }
+  .new-arrival h1 {
+    font-size: 1rem;
+  }
+  /* Items */
+  #samples {
+    justify-content: center;
+  }
+  .item {
+    justify-content: center;
+    width: 90%;
+  }
+  .watch {
+    display: none;
+  }
+  .glasses {
+    display: none;
+  }
+  /* Store info */
+  #location {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+  }
+  footer {
+    text-align: center;
+  }
